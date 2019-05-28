@@ -26,6 +26,7 @@ sudo apt-get update -y
 
 #Step 4) Install gpiozero module----------------------------
 sudo apt-get install -y python3-gpiozero
+sudo apt-get install -y python3-pydbus
 #-----------------------------------------------------------
 
 #Step 5) Download Python script-----------------------------
@@ -38,7 +39,8 @@ if [ -e $script ];
 	then
 		echo "Script SafeShutdown.py already exists. Doing nothing."
 	else
-		wget "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/SafeShutdown.py"
+		wget "https://raw.githubusercontent.com/ntrazzano/retroflag-picase/master/SafeShutdown.py"
+		wget "https://raw.githubusercontent.com/ntrazzano/retroflag-picase/master/xbox_sync.py"
 fi
 #-----------------------------------------------------------
 
